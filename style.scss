@@ -1,0 +1,57 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.first-element {
+    width: 350px;
+    height: 220px;
+    padding: 15px 10px 20px 10px;
+    margin-bottom: 30px;
+    border: 2px dashed red;
+    background-color: green;
+}
+
+.second-element {
+    width: 99%;
+    margin: 50px auto;
+    padding: 100px 50px;
+    display: flex;
+    resize: horizontal;
+    clear: both;
+    border: 2px solid black;
+    
+    .float {
+        height: 75%;
+        margin-right: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        shape-outside: inset(60% 0 0 0);
+
+        &-right {
+            float: right;
+            width: 30%;
+        }
+    }
+
+    p  {
+    }
+
+    img {
+        display: block;
+
+        &.second-element__image {
+
+            &--first {
+                float: left;
+                margin: 30px;
+            }
+
+            &--second {
+                margin: 25px 0 0 15px
+            }
+        }
+    }
+}
